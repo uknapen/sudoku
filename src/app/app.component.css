@@ -1,0 +1,59 @@
+:host {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    display: flex;
+  }
+  .row input {
+    width: 32px;
+    height: 32px;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    display: block;
+    /* justify-content: center; */
+    text-align: center;
+    font-size: large;
+    /* cursor: none; */
+    /* gap: -1; */
+    caret-color: transparent;
+  }
+  .row input:nth-child(3n) {
+    border-right: 2px solid black;
+  }
+  .row input:nth-child(9n) {
+    border-right: 1px solid grey;
+  }
+  .row:nth-child(3n) input {
+    border-bottom: 2px solid black;
+  }
+  .row:nth-child(9n) input {
+    border-bottom: 1px solid grey;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.error {
+  color: red; /* Change to desired color */
+}
+
+.focused-col {
+  background-color: rgb(213, 225, 230);
+}
+
+.focused-row input {
+  background-color: rgb(213, 225, 230);
+}
+
+.focused-subgrid {
+  background-color: rgb(213, 225, 230);
+}
